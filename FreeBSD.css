@@ -14,7 +14,7 @@
 .header-top-left, .img {
 	border-image-width: 483px;
 	width: 483px;
-	height: 85px;
+	height: 85.5px;
 	background-color: green;
 	display: inline-block;
 	vertical-align: top;
@@ -32,18 +32,20 @@
 
 .header-search, .header-text {
 	width: 480px;
-	height: 41px;
+	height: 41.5px;
 	background-image: url('./backgroundcolor.PNG');
-	display: inline-block;
-	
+	display: block;
+	text-align: right;
 }
+
 .hearder-bottom {
 	width: 933px;
 	height: 40px;
 	padding-top: 10px;
 	padding-right: 30px;
 	vertical-align: top;
-	background-color: #C8C8C8 ;
+	background-color: #C8C8C8;
+	margin-top: -4px;
 }
 .top-menu {
 	margin-left: 30px;
@@ -59,7 +61,13 @@
 	margin-left: 15px;
 	margin-right: 25px;
 }
-
+.left li {
+	list-style-type: none;
+}
+.left li::before {
+	content: ">>";
+	color: red;
+}
 .right {
 	display: inline-block;
 	width: 670px;
